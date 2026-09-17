@@ -36,6 +36,7 @@ function Technologies(){
             <p>ID: {technologies[2].id}</p>
             <p>Nazwa: {technologies[2].name}</p>
             <p>Kategoria: {technologies[2].category}</p>
+            
         </div>
     )
 }
