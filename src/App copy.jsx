@@ -11,23 +11,27 @@ import InfoBox from "./components/InfoBox.jsx";
 import Navigation from "./components/Navigation.jsx"
 import CourseCard from "./components/CourseCard.jsx"
 import Technologies from "./components/Technologies.jsx"
-import StudentCard from './components/StudentCard.jsx'
 
 function App() {
-    const studentOne = {
-      id: 1,
-      firstName: "Jan",
-      lastName: "Kowalski",
-      className: "4P",
-      specialization: "technik programista",
-      gradesAverage: 4.75,
-      isActive: true
-    };
+
+  const specyfikation = {
+    language: "JavaScript",
+    type: "Fronend"
+  }
+
+  const features = [
+    "Komponenty",
+    "JSX",
+    "Props"
+  ]
+
   return (
     <>
-    <StudentCard student={studentOne} />
-    <StudentCard student={studentOne} />
-    <StudentCard student={studentOne} />
+    <Header/>
+     <Technology name="React" category="frontend" hours="39" specyfikacja={specyfikation} ft={features}/>
+     <Technology name="JS" category="backend" hours="25"  specyfikacja={specyfikation} ft= {features}/>
+     <Technology name="CSS" category="frontend" hours="2"  specyfikacja={specyfikation} ft= {features}/>
+     <Technology name="Ja chce do domu" category="choroba psychiczna" hours="&infin;"  specyfikacja={specyfikation} ft= {features}/>
     </>
   )
 }

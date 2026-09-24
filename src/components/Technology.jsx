@@ -1,11 +1,12 @@
-function Technology() {
+function Technology(props) {
   return (
+  <>
     <section>
-      <h2>React</h2>
-      <p>Biblioteka frontendowa</p>
-      <p>Liczba godzin: 30</p>
+      <h4>Technologia - {props.name}, Kategoria - {props.category}, Liczba godzin - {props.hours}, {props.specyfikacja.language}, {props.ft[0]}</h4>
     </section>
+  </>
   );
+  
 }
 
 export default Technology;
