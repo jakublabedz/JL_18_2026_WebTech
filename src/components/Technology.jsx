@@ -1,12 +1,15 @@
-function Technology(props) {
-  return (
-  <>
+function Technology({ name, category, hours, onSelect }) {
+   return (
     <section>
-      <h4>Technologia - {props.name}, Kategoria - {props.category}, Liczba godzin - {props.hours}</h4>
+      <h2>{name}</h2>
+      <p>{category}</p>
+      <p>{hours}</p>
+
+      <button onClick={() => onSelect(name)}>
+        Wybierz
+      </button>
     </section>
-  </>
   );
-  
 }
 
 export default Technology;
