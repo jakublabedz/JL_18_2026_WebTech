@@ -1,17 +1,17 @@
-function InfoBox(){
+function InfoBox(name) {
+
+    const handleClick = (tech) => {
+        console.log(`Kliknięto technologię: ${tech}`);
+    };
+
+
     return (
-    <div>
-        <h2>Języki programowania</h2>
-        <p>Języki które używamy w szkole</p>
-        <ul>
-            <li>C#</li>
-            <li>JS</li>
-            <li>C++</li>
-            <li>Java</li>
-        </ul>
-        <p>Potrzebne do egzaminu Inf04</p>
-    </div>
-    )
+        <div>
+            <button onClick={() => handleClick(name)}>
+                {name}
+            </button>
+        </div>
+    );
 }
 
 export default InfoBox;
